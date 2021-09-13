@@ -71,12 +71,12 @@ export default class TransactionScreen extends React.Component {
     //   transactionType: "Issue"
     // });
 
-     db.collection("transactions").add({
-       studentId: this.state.scannedStudentId,
-       cycleId: this.state.scannedCycleId,
-       date: firebase.firestore.Timestamp.now().toDate(),
-       transactionType: "Issue"
-     });
+    db.collection("transactions").add({
+      studentId: this.state.scannedStudentId,
+      cycleId: this.state.scannedCycleId,
+      date: firebase.firestore.Timestamp.now().toDate(),
+      transactionType: "Issue"
+    });
 
     // db.collection("transactions").({
     //   studentId: this.state.scannedStudentId;
@@ -150,10 +150,10 @@ export default class TransactionScreen extends React.Component {
     //   scannedCycleId: 
     // });
 
-     this.setState({
-       scannedStudentId: "",
-       scannedCycleId: ""
-     });
+    this.setState({
+      scannedStudentId: "",
+      scannedCycleId: ""
+    });
 
      // this.state({
     //   scannedStudentId: "",
@@ -257,11 +257,10 @@ export default class TransactionScreen extends React.Component {
       var isStudentEligible = await this.checkStudentEligibilityForReturn();
       if (isStudentEligible) {
         this.initiateCycleReturn();
-        
-       // Alert("Thank you for returning it to the School!");
-       // alert("Thank you for returning it to the School!");
-       // Alert.alert(Thank you for returning it to the School!);
-        Alert.alert("Thank you for returning it to the School!");
+       // Alert("Thank you for returning it to the Schoo!");
+       // alert("Thank you for returning it to the Schoo!");
+       // Alert.alert(Thank you for returning it to the Schooy!);
+        Alert.alert("Thank you for returning it to the Schoo!");
 
       }
     }
